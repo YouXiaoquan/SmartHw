@@ -11,7 +11,7 @@
       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
     }
-    var access_token = getParameterByName('access_token');
+    var access_token = getParameterByName('access_token'+'&product_id=7984');
     var device_list = [];
     
     var deviceLists = getParameterByName('device_list');
