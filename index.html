@@ -15,6 +15,7 @@
     var device_list = [];
     
     var deviceLists = getParameterByName('device_list');
+    access_token = access_token+"&product_id=7984";
     if ( deviceLists !== null ){
       try {
         deviceLists = JSON.parse(deviceLists);
